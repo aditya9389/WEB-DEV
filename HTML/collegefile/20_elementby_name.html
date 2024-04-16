@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>How to check a checkbox using getElementByName() method in JavaScript</p>
+Tiger: <input name="forestAnimal" type="checkbox" value="Tiger">
+Cow: <input name="domesticAnimal" type="checkbox" value="Cow">
+<button onclick="retriveElementByName()" id="btnClick">Click</button>
+<script>
+function retriveElementByName(){
+var animalName = document.getElementsByName("domesticAnimal");
+var i;
+for (i = 0; i < animalName.length; i++) {
+if (animalName[i].type == "checkbox") {
+animalName[i].checked = true;
+}
+}
+}
+</script>
+</body>
+</html>
