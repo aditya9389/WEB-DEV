@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1>Adding 2 numbers</h1>
+        <button id="addbutton" onclick="addfunc()">start adding</button>        
+        <p id="pid"></p>
+        <script>
+            function addfunc(){
+                var num1=parseInt(prompt("give first number to add",""));
+                var num2=parseInt(prompt("give second number",""));
+                var sum= num1+num2;
+                var text ="num1("+num1+") + num2("+num2+") =" + sum;
+                alert("addition is done");
+                document.getElementById("pid").innerHTML=text;
+            }
+        </script>
+    </body>
+</html>
